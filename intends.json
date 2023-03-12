@@ -1,0 +1,51 @@
+{
+	"intends":[
+	{
+		"tag":"greating",
+		"pattern":["hello","hi","hey"],
+		"result":["hey how are you","hello there","how do you do"],
+		"weight":[1                ,1            ,1]
+	},
+	{
+		"tag":"bye",
+		"pattern":["bye","cya","goodbye","tata","quit","exit","end"],
+		"result":["bye bye","tata","have a nice day"],
+		"weight":[1        ,1     ,1]
+	},
+	{
+		"tag":"name",
+		"pattern":["what is your name","name","what are you called"],
+		"result":["hi my name is chatbot","hi I am chatbot"],
+		"weight":[1                      ,1]
+	},
+	{
+		"tag":"job",
+		"pattern":["what do you do","what is your job","what is your purpose","job","purpose"],
+		"result":["I am just a test program","I am a test program"],
+		"weight":[1                         ,1]
+	},
+	{
+		"tag":"feel",
+		"pattern":["how are you","how do you feel","how are you feeling","feel","how do you feel right now","how do you do"],
+		"result":["I am fine","I feel fine"],
+		"weight":[1          ,1]
+	},
+	{
+		"tag":"time",
+		"pattern":["time","what is the time","what time is it"],
+		"result":["Current it is <time>"],
+		"weight":[1]
+	},
+	{
+		"tag":"date",
+		"pattern":["date","what is the date","what is today"],
+		"result":["Today is <date>"],
+		"weight":[1]
+	}
+	],
+	"unknown":
+	{
+		"result":["Sorry but I could not understand","Sorry but I can't understand that"],
+		"weight":[1                                 ,1]
+	}
+}
